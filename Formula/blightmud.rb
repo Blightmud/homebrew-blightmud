@@ -1,8 +1,8 @@
 class Blightmud < Formula
   desc "Terminal mud client written in Rust"
   homepage "https://github.com/LiquidityC/Blightmud"
-  url "https://github.com/LiquidityC/Blightmud/archive/v1.0.0.tar.gz"
-  sha256 "76ce6df25dfff1d7d7c5c5027e260e9a0209d1475347b7a036e34047af493760"
+  url "https://github.com/LiquidityC/Blightmud/archive/v2.0.0.tar.gz"
+  sha256 "0fdda39c8b9524031cf0098211354fa62bb89a5d8af2af64f213fb4cac0d25d5"
   license "GPL-3.0-only"
 
   depends_on "rust" => :build
