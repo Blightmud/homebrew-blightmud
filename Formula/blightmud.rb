@@ -1,12 +1,12 @@
 class Blightmud < Formula
   desc "Terminal mud client written in Rust"
   homepage "https://github.com/LiquidityC/Blightmud"
-  version "2.2.1"
+  version "2.3.0"
   license "GPL-3.0-only"
   bottle :unneeded
 
   url "https://github.com/LiquidityC/Blightmud/releases/download/v#{version}/blightmud-v#{version}-macos.zip"
-  sha256 "a6a7f6b4b04d105cd8cabedf3c54d72953075e0cc5e6acead71ac7286ff915b6"
+  sha256 "e2dc164652a9dd6a0e857c1369862f998d19f8bb034f12eb331611ace4119791"
 
   def install
     bin.install "blightmud"
