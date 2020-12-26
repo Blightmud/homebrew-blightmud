@@ -6,7 +6,7 @@ class Blightmud < Formula
   bottle :unneeded
 
   url "https://github.com/Blightmud/Blightmud/releases/download/v#{version}/blightmud-v#{version}-macos.zip"
-  sha256 "12a8950d22f02c076864718561416059f3a05ca1809e4cb15c6d947c2d87e201  "
+  sha256 "12a8950d22f02c076864718561416059f3a05ca1809e4cb15c6d947c2d87e201"
 
   def install
     bin.install "blightmud"
