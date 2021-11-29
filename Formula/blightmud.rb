@@ -3,7 +3,6 @@ class Blightmud < Formula
   homepage "https://github.com/Blightmud/Blightmud"
   version "3.5.0"
   license "GPL-3.0-only"
-  bottle :unneeded
   depends_on "openssl"
 
   url "https://github.com/Blightmud/Blightmud/releases/download/v#{version}/blightmud-v#{version}-macos.zip"
