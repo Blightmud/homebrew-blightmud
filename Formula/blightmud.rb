@@ -6,7 +6,7 @@ class Blightmud < Formula
   depends_on "openssl"
 
   url "https://github.com/Blightmud/Blightmud/releases/download/v#{version}/blightmud-v#{version}-macos.zip"
-  sha256 "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
+  sha256 "c6c325c5b6ad67fcb2b7eb7cadf63fbdda00bfae3d0ce26c50f83743ef8e5805"
 
   def install
     bin.install "blightmud"
