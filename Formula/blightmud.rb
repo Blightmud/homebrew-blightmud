@@ -1,24 +1,23 @@
 class Blightmud < Formula
   desc "Terminal mud client written in Rust"
   homepage "https://github.com/Blightmud/Blightmud"
-  version "5.5.2"
+  version "5.5.3"
   license "GPL-3.0-only"
   depends_on "openssl"
 
   if OS.mac?
-    on_big_sur do
-      url "https://github.com/Blightmud/Blightmud/releases/download/v#{version}/blightmud-v#{version}-macos-11.zip"
-      sha256 "f9c0fb7fdd31cbc464315724c01a04e12d6e3b9ec4f933ec2f6ada6324d005f4"
-    end
-
-    on_monterey :or_newer do
-      url "https://github.com/Blightmud/Blightmud/releases/download/v#{version}/blightmud-v#{version}-macos.zip"
-      sha256 "f9c0fb7fdd31cbc464315724c01a04e12d6e3b9ec4f933ec2f6ada6324d005f4"
-    end
+    url "https://github.com/Blightmud/Blightmud/releases/download/v#{version}/blightmud-v#{version}-macos.zip"
+    sha256 "a689dbb0c9920f9fcdbc1f9683a1765c910134a82ca7b88e3e87d9bd6421a3e5"
   end
 
   def install
     bin.install "blightmud"
+    (share/"blightmud/lua/types").install "lua/types/blightmud.d.lua"
+    luarc = JSON.generate({
+      "$schema" => "https://raw.githubusercontent.com/LuaLS/vscode-lua/master/setting/schema.json",
+      "workspace" => { "library" => ["#{share}/blightmud/lua/types"] },
+    })
+    (share/"blightmud").write("luarc.json", luarc)
   end
 
   test do
