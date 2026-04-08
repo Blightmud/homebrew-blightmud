@@ -7,7 +7,7 @@ class Blightmud < Formula
 
   if OS.mac?
     url "https://github.com/Blightmud/Blightmud/releases/download/v#{version}/blightmud-v#{version}-macos.zip"
-    sha256 "c545c74188db9ee6aab012d5fd19ee875dacdf7cf935e7a5e4b20976e1a3fe73"
+    sha256 "626b4d44dcd1b90671397552ad632a2abc747661df874197d237190affb93827"
   end
 
   def install
