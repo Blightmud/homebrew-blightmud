@@ -1,13 +1,13 @@
 class Blightmud < Formula
   desc "Terminal mud client written in Rust"
   homepage "https://github.com/Blightmud/Blightmud"
-  version "5.6.1"
+  version "5.7.0"
   license "GPL-3.0-only"
   depends_on "openssl"
 
   if OS.mac?
     url "https://github.com/Blightmud/Blightmud/releases/download/v#{version}/blightmud-v#{version}-macos.zip"
-    sha256 "6714e5dc51eca1577c3cd518e393bdfe65be9dc77cdc81aa0cf9dc7161bfaa70"
+    sha256 "b224b00a4560c00c7708ba32a010db8877e0ca9dceb18d075f77a1f9e53f38d8"
   end
 
   def install
