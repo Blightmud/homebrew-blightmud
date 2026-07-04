@@ -17,7 +17,7 @@ class Blightmud < Formula
       "$schema" => "https://raw.githubusercontent.com/LuaLS/vscode-lua/master/setting/schema.json",
       "workspace" => { "library" => ["#{share}/blightmud/lua/types"] },
     })
-    (share/"blightmud").write("luarc.json", luarc)
+    (share/"blightmud/luarc.json").write(luarc)
   end
 
   test do
